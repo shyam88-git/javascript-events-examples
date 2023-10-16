@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function showClock(){
+
+            let now=new Date();
+            document.getElementById('p1').innerHTML=now.toString();
+        }
+
+        function showTimer(){
+
+            x=setInterval(showClock,1000);
+        }
+
+        function stopTimer(){
+
+            clearInterval(x);
+        }
+    </script>
+</head>
+<body>
+    
+    <p id="p1"></p>
+    <input type="button" value="start" onclick="showTimer()"/>
+    <input type="button" value="stop" onclick="stopTimer()"/>
+</body>
+</html>
