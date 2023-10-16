@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function colorchanage(ref,clrname){
+
+            ref.style.backgroundColor=clrname;
+        }
+    </script>
+
+    <style>
+
+        #div1{
+
+            width: 300px;
+            height: 200px;
+            border: solid 1px black;
+        }
+
+        #div2{
+
+            width: 300px;
+            height: 200px;
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1" onclick="colorchanage(this,'red')">
+        Click to change color
+    </div>
+
+    <div id="div2" onclick="colorchanage(this,'yellow')">
+        Click to change the color
+        </div>
+    
+</body>
+</html>
