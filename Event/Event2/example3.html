@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x=prompt("Enter the input");
+        if(isNaN(x)){
+
+            document.write('You didnot entered the number');
+        }
+
+        let b=Number(x);
+        if(b>0 && b<=9){
+
+            document.write("Your entered a single digit");
+
+
+        }
+        else if(b>9 && b<=99){
+
+            document.write('Yu entered the 2 digit')
+        }
+        else{
+
+            document.write('you entered the multiple digit');
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
